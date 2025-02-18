@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }) => {
   const logout = useCallback(() => {
     localStorage.removeItem('token');
     setIsAuthenticated(false);
-    navigate('/login');
+    navigate('/');
   }, [navigate]);
 
   return (
